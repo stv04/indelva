@@ -20,10 +20,48 @@
 	<link rel="stylesheet" href="css/custom.css" type="text/css" />
 	<meta name="viewport" content="width=device-width, initial-scale=1" />
 
+	<!-- SLIDER REVOLUTION 5.x CSS SETTINGS -->
+	<link rel="stylesheet" type="text/css" href="include/rs-plugin/css/settings.css" media="screen" />
+	<link rel="stylesheet" type="text/css" href="include/rs-plugin/css/layers.css">
+	<link rel="stylesheet" type="text/css" href="include/rs-plugin/css/navigation.css">
+
 	<link rel="stylesheet" href="css/colors.css" type="text/css" />
 	<!-- Document Title
 	============================================= -->
 	<title>Uniformes Indelva</title>
+
+	<style>
+
+		.revo-slider-emphasis-text {
+			font-size: 58px;
+			font-weight: 700;
+			letter-spacing: 1px;
+			font-family: 'Poppins', sans-serif;
+			padding: 15px 20px;
+			border-top: 2px solid #FFF;
+			border-bottom: 2px solid #FFF;
+		}
+
+		.revo-slider-desc-text {
+			font-size: 20px;
+			font-family: 'Lato', sans-serif;
+			width: 650px;
+			text-align: center;
+			line-height: 1.5;
+		}
+
+		.revo-slider-caps-text {
+			font-size: 16px;
+			font-weight: 400;
+			letter-spacing: 3px;
+			font-family: 'Poppins', sans-serif;
+		}
+
+		.tp-video-play-button { display: none !important; }
+
+		.tp-caption { white-space: nowrap; }
+
+	</style>
 
 </head>
 
@@ -35,7 +73,7 @@
 
 		<!-- Header
 		============================================= -->
-		<header id="header" class="full-header transparent-header dark semi-transparent">
+		<header id="header" class="full-header">
 			<div id="header-wrap">
 				<div class="container">
 					<div class="header-row justify-content-lg-between">
@@ -93,7 +131,7 @@
 									</ul>
 								</li>
 								<li class="menu-item mega-menu">
-									<a class="menu-link" href="contactanos.html"><div>Contáctanos</div></a>
+									<a class="menu-link" href="contacto.html"><div>Contáctanos</div></a>
 								</li>
 								<li class="menu-item mega-menu">
 									<a class="menu-link" href="clientes.html"><div>Nuestros Clientes</div></a>
@@ -112,43 +150,186 @@
 			<div class="header-wrap-clone"></div>
 		</header><!-- #header end -->
 
-		<section id="slider" class="slider-element slider-parallax swiper_wrapper min-vh-60 min-vh-md-100 include-header">
-			<div class="slider-inner">
+		<section id="slider" class="slider-element slider-parallax revslider-wrap overflow-hidden clearfix">
 
-				<div class="swiper-container swiper-parent">
-					<div class="swiper-wrapper">
-						<div class="swiper-slide dark">
-							<div class="container">
-								<div class="slider-caption slider-caption-center">
-									<div data-animate="fadeInUp">
-										<h2 data-animate="fadeInUp" >Bienvenido a Indelva</h2>
-										<p class="d-none d-sm-block" data-animate="fadeInUp" data-delay="200">Creamos y confeccionamos uniformes de todo tipo. Con excelente calidad y los mejores diseños a precios muy competitivos</p>
-									</div>
-								</div>
-							</div>
-							<div class="swiper-slide-bg" style="background-image:url('images/slider/1.jpg');"></div>
-						</div>
-						<div class="swiper-slide dark">
-							<div class="container">
-								<div class="slider-caption slider-caption-center">
-									<h2 data-animate="fadeInUp">Versatilidad en cada diseño</h2>
-									<p class="d-none d-sm-block" data-animate="fadeInUp" data-delay="200">¡Has que tu empresa luzca los mejores uniformes!</p>
-								</div>
-							</div>
-							<div class="video-wrap">
-								<video poster="images/videos/explore-poster.jpg" preload="auto" loop autoplay muted>
-									<source src='images/videos/bordado.mp4' type='video/mp4' />
-								</video>
-								<div class="video-overlay" style="background-color: rgba(0,0,0,0.55);"></div>
-							</div>
-						</div>
-					</div>
-					<div class="slider-arrow-left"><i class="icon-angle-left"></i></div>
-					<div class="slider-arrow-right"><i class="icon-angle-right"></i></div>
-					<div class="slide-number"><div class="slide-number-current"></div><span>/</span><div class="slide-number-total"></div></div>
+			<!--
+			#################################
+				- THEMEPUNCH BANNER -
+			#################################
+			-->
+			<div id="rev_slider_ishop_wrapper" class="rev_slider_wrapper fullwidth-container" data-alias="default-slider" style="padding:0px;">
+					<!-- START REVOLUTION SLIDER 5.1.4 fullwidth mode -->
+				<div id="rev_slider_ishop" class="rev_slider fullwidthbanner" style="display:none;" data-version="5.1.4">
+					<ul>    <!-- SLIDE  -->
+						<li data-transition="fade" data-slotamount="1" data-masterspeed="1500" data-delay="5000" data-saveperformance="off" data-title="Renueva tus uniformes" style="background-color: #F6F6F6;">
+							<!-- LAYERS -->
+
+							<!-- LAYER NR. 2 -->
+							<div class="tp-caption ltl tp-resizeme revo-slider-caps-text text-uppercase"
+							data-x="10"
+							data-y="50"
+							data-transform_in="x:-200;y:0;z:0;rotationZ:0;scaleX:1;scaleY:1;skewX:0;skewY:0;opacity:0;s:700;e:Power4.easeOutQuad;"
+							data-speed="400"
+							data-start="1000"
+							data-easing="easeOutQuad"
+							data-splitin="none"
+							data-splitout="none"
+							data-elementdelay="0.01"
+							data-endelementdelay="0.1"
+							data-endspeed="1000"
+							data-endeasing="Power4.easeIn"><img src="images/slider/portafolio/empresarios.png" alt="Girl"></div>
+
+							<div class="tp-caption ltl tp-resizeme revo-slider-caps-text text-uppercase"
+							data-x="570"
+							data-y="75"
+							data-transform_in="x:0;y:150;z:0;rotationZ:0;scaleX:1.3;scaleY:1;skewX:0;skewY:0;opacity:0;s:700;e:Power4.easeOutQuad;"
+							data-speed="700"
+							data-start="1000"
+							data-easing="easeOutQuad"
+							data-splitin="none"
+							data-splitout="none"
+							data-elementdelay="0.01"
+							data-endelementdelay="0.1"
+							data-endspeed="1000"
+							data-endeasing="Power4.easeIn" style=" color: #333;">Alista tus uniformes</div>
+
+							<div class="tp-caption ltl tp-resizeme revo-slider-emphasis-text p-0 border-0"
+							data-x="570"
+							data-y="105"
+							data-transform_in="x:0;y:150;z:0;rotationZ:0;scaleX:1.3;scaleY:1;skewX:0;skewY:0;opacity:0;s:700;e:Power4.easeOutQuad;"
+							data-speed="700"
+							data-start="1200"
+							data-easing="easeOutQuad"
+							data-splitin="none"
+							data-splitout="none"
+							data-elementdelay="0.01"
+							data-endelementdelay="0.1"
+							data-endspeed="1000"
+							data-endeasing="Power4.easeIn" style=" color: #333; max-width: 430px; line-height: 1.15;">Excelente Calidad<br>y diseño</div>
+
+							<div class="tp-caption ltl tp-resizeme revo-slider-desc-text text-left"
+							data-x="570"
+							data-y="275"
+							data-transform_in="x:0;y:150;z:0;rotationZ:0;scaleX:1.3;scaleY:1;skewX:0;skewY:0;opacity:0;s:700;e:Power4.easeOutQuad;"
+							data-speed="700"
+							data-start="1400"
+							data-easing="easeOutQuad"
+							data-splitin="none"
+							data-splitout="none"
+							data-elementdelay="0.01"
+							data-endelementdelay="0.1"
+							data-endspeed="1000"
+							data-endeasing="Power4.easeIn" style=" color: #333; max-width: 550px; white-space: normal;">Nosotros nos encargamos de crear lo mejor para tí y tu Empresa</div>
+
+							<div class="tp-caption ltl tp-resizeme"
+							data-x="570"
+							data-y="375"
+							data-transform_in="x:0;y:150;z:0;rotationZ:0;scaleX:1.3;scaleY:1;skewX:0;skewY:0;opacity:0;s:700;e:Power4.easeOutQuad;"
+							data-speed="700"
+							data-start="1550"
+							data-easing="easeOutQuad"
+							data-splitin="none"
+							data-splitout="none"
+							data-elementdelay="0.01"
+							data-endelementdelay="0.1"
+							data-endspeed="1000"
+							data-endeasing="Power4.easeIn"><a href="#" class="button button-border button-large button-rounded text-right m-0"><span>Contáctanos</span> <i class="icon-angle-right"></i></a></div>
+
+						</li>
+						<!-- SLIDE  -->
+						<li data-transition="slideup" data-slotamount="1" data-masterspeed="1500" data-delay="5000"  data-saveperformance="off"  data-title="Traje de Bioseguridad" style="background-color: #E9E8E3;">
+							<!-- LAYERS -->
+
+							<div class="tp-caption ltl tp-resizeme revo-slider-caps-text text-uppercase"
+							data-x="700"
+							data-y="78"
+							data-transform_in="x:250;y:0;z:0;rotationZ:0;scaleX:1;scaleY:1;skewX:0;skewY:0;opacity:0;s:400;e:Power4.easeOutQuad;"
+							data-speed="400"
+							data-start="1000"
+							data-easing="easeOutQuad"
+							data-splitin="none"
+							data-splitout="none"
+							data-elementdelay="0.01"
+							data-endelementdelay="0.1"
+							data-endspeed="1000"
+							data-endeasing="Power4.easeIn"><img src="images/slider/portafolio/traje-bioseguridad.png" alt="Bag"></div>
+
+							<!-- LAYER NR. 2 -->
+							<div class="tp-caption ltl tp-resizeme revo-slider-caps-text text-uppercase"
+							data-x="0"
+							data-y="110"
+							data-transform_in="x:0;y:150;z:0;rotationZ:0;scaleX:1.3;scaleY:1;skewX:0;skewY:0;opacity:0;s:700;e:Power4.easeOutQuad;"
+							data-speed="700"
+							data-start="1000"
+							data-easing="easeOutQuad"
+							data-splitin="none"
+							data-splitout="none"
+							data-elementdelay="0.01"
+							data-endelementdelay="0.1"
+							data-endspeed="1000"
+							data-endeasing="Power4.easeIn" style=" color: #333;">¡Cuida tu salud!</div>
+
+							<div class="tp-caption ltl tp-resizeme revo-slider-emphasis-text p-0 border-0"
+							data-x="0"
+							data-y="140"
+							data-transform_in="x:0;y:150;z:0;rotationZ:0;scaleX:1.3;scaleY:1;skewX:0;skewY:0;opacity:0;s:700;e:Power4.easeOutQuad;"
+							data-speed="700"
+							data-start="1200"
+							data-easing="easeOutQuad"
+							data-splitin="none"
+							data-splitout="none"
+							data-elementdelay="0.01"
+							data-endelementdelay="0.1"
+							data-endspeed="1000"
+							data-endeasing="Power4.easeIn" style=" color: #333; line-height: 1.15;">Traje <br> de Bioseguridad</div>
+
+							<div class="tp-caption ltl tp-resizeme revo-slider-desc-text text-left"
+							data-x="0"
+							data-y="280"
+							data-transform_in="x:0;y:150;z:0;rotationZ:0;scaleX:1.3;scaleY:1;skewX:0;skewY:0;opacity:0;s:700;e:Power4.easeOutQuad;"
+							data-speed="700"
+							data-start="1400"
+							data-easing="easeOutQuad"
+							data-splitin="none"
+							data-splitout="none"
+							data-elementdelay="0.01"
+							data-endelementdelay="0.1"
+							data-endspeed="1000"
+							data-endeasing="Power4.easeIn" style=" color: #333; max-width: 550px; white-space: normal;">Garantizamos, calidad y confort. Pero sobre todo, tu salud</div>
+
+							<div class="tp-caption ltl tp-resizeme"
+							data-x="0"
+							data-y="340"
+							data-transform_in="x:0;y:150;z:0;rotationZ:0;scaleX:1.3;scaleY:1;skewX:0;skewY:0;opacity:0;s:700;e:Power4.easeOutQuad;"
+							data-speed="700"
+							data-start="1550"
+							data-easing="easeOutQuad"
+							data-splitin="none"
+							data-splitout="none"
+							data-elementdelay="0.01"
+							data-endelementdelay="0.1"
+							data-endspeed="1000"
+							data-endeasing="Power4.easeIn"><a href="#" class="button button-border button-large button-rounded text-right m-0"><span>Adquiérelo</span> <i class="icon-angle-right"></i></a></div>
+
+							<div class="tp-caption utb tp-resizeme revo-slider-caps-text text-uppercase"
+							data-x="510"
+							data-y="0"
+							data-transform_in="x:0;y:-236;z:0;rotationZ:0;skewX:0;skewY:0;opacity:0;s:700;e:Power4.easeOutQuad;"
+							data-speed="600"
+							data-start="2100"
+							data-easing="easeOutQuad"
+							data-splitin="none"
+							data-splitout="none"
+							data-elementdelay="0.01"
+							data-endelementdelay="0.1"
+							data-endspeed="1000"
+							data-endeasing="Power4.easeIn"><img src="images/slider/rev/shop/tag.png" alt="Bag"></div>
+
+						</li>
+					</ul>
 				</div>
+			</div><!-- END REVOLUTION SLIDER -->
 
-			</div>
 		</section>
 
 		<!-- Content
@@ -440,10 +621,10 @@
 										<h4><a href="index.html">Inicio</a></h4>
 
 										<ul>
-											<li><a href="#">Sobre Nosotros</a></li>
-											<li><a href="#">Portafolio</a></li>
-											<li><a href="#">Contáctanos</a></li>
-											<li><a href="#">Nuestros clientes</a></li>
+											<li><a href="#nosotros.html">Sobre Nosotros</a></li>
+											<li><a href="#portafolio.html">Portafolio</a></li>
+											<li><a href="#contacto.html">Contáctanos</a></li>
+											<li><a href="#clientes.html">Nuestros clientes</a></li>
 										</ul>
 
 									</div>
@@ -637,6 +818,95 @@
 	<!-- Footer Scripts
 	============================================= -->
 	<script src="js/functions.js"></script>
+
+
+	<!-- SLIDER REVOLUTION 5.x SCRIPTS  -->
+	<script src="include/rs-plugin/js/jquery.themepunch.tools.min.js"></script>
+	<script src="include/rs-plugin/js/jquery.themepunch.revolution.min.js"></script>
+
+	<script src="include/rs-plugin/js/extensions/revolution.extension.video.min.js"></script>
+	<script src="include/rs-plugin/js/extensions/revolution.extension.slideanims.min.js"></script>
+	<script src="include/rs-plugin/js/extensions/revolution.extension.actions.min.js"></script>
+	<script src="include/rs-plugin/js/extensions/revolution.extension.layeranimation.min.js"></script>
+	<script src="include/rs-plugin/js/extensions/revolution.extension.kenburn.min.js"></script>
+	<script src="include/rs-plugin/js/extensions/revolution.extension.navigation.min.js"></script>
+	<script src="include/rs-plugin/js/extensions/revolution.extension.migration.min.js"></script>
+	<script src="include/rs-plugin/js/extensions/revolution.extension.parallax.min.js"></script>
+
+	<script>
+
+		var tpj=jQuery;
+		tpj.noConflict();
+		var $ = jQuery.noConflict();
+
+		tpj(document).ready(function() {
+
+			var apiRevoSlider = tpj('#rev_slider_ishop').show().revolution(
+			{
+				sliderType:"standard",
+				jsFileLocation:"include/rs-plugin/js/",
+				sliderLayout:"fullwidth",
+				dottedOverlay:"none",
+				delay:9000,
+				navigation: {},
+				responsiveLevels:[1200,992,768,480,320],
+				gridwidth:1140,
+				gridheight:500,
+				lazyType:"none",
+				shadow:0,
+				spinner:"off",
+				autoHeight:"off",
+				disableProgressBar:"on",
+				hideThumbsOnMobile:"off",
+				hideSliderAtLimit:0,
+				hideCaptionAtLimit:0,
+				hideAllCaptionAtLilmit:0,
+				debugMode:false,
+				fallbacks: {
+					simplifyAll:"off",
+					disableFocusListener:false,
+				},
+				navigation: {
+					keyboardNavigation:"off",
+					keyboard_direction: "horizontal",
+					mouseScrollNavigation:"off",
+					onHoverStop:"off",
+					touch:{
+						touchenabled:"on",
+						swipe_threshold: 75,
+						swipe_min_touches: 1,
+						swipe_direction: "horizontal",
+						drag_block_vertical: false
+					},
+					arrows: {
+						style: "ares",
+						enable: true,
+						hide_onmobile: false,
+						hide_onleave: false,
+						tmp: '<div class="tp-title-wrap">	<span class="tp-arr-titleholder">{{title}}</span> </div>',
+						left: {
+							h_align: "left",
+							v_align: "center",
+							h_offset: 10,
+							v_offset: 0
+						},
+						right: {
+							h_align: "right",
+							v_align: "center",
+							h_offset: 10,
+							v_offset: 0
+						}
+					}
+				}
+			});
+
+			apiRevoSlider.on("revolution.slide.onloaded",function (e) {
+				SEMICOLON.slider.sliderDimensions();
+			});
+
+		}); //ready
+
+	</script>
 
 </body>
 </html>
