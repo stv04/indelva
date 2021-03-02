@@ -1,16 +1,16 @@
 <?php
     $destino 'elromerostiven@gmail.com';
 
-    $nombre = $_POST["nombre"];
-    $email = $_POST["email"];
-    $tlf = $_POST["tlf"];
-    $asunto = $_POST["asunto"];
-    $mensaje = $_POST["mensaje"];
+    $nombre = $_GET["nombre"];
+    $email = $_GET["email"];
+    $tlf = $_GET["tlf"];
+    $asunto = $_GET["asunto"];
+    $mensaje = $_GET["mensaje"];
 
     $contenido = "Nombre: $nombre \n Correo: $email \n Telefono: $tlf \n Mensaje: $mensaje";
 
     mail($destino, $asunto, $contenido);
 
-    echo("Su mensaje ha sido enviado exitosamente");
+    echo "Su mensaje ha sido enviado exitosamente";
 
 ?>
