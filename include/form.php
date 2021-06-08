@@ -27,8 +27,8 @@ require 'phpmailer/src/SMTP.php';
 $toemails = array();
 
 $toemails[] = array(
-				'email' => 'your-email@website.com', // Your Email Address
-				'name' => 'Your Name' // Your Name
+				'email' => 'empresa@example.com', // Your Email Address
+				'name' => 'INDELVA' // Your Name
 			);
 
 
@@ -37,8 +37,8 @@ $toemails[] = array(
 ---------------------------------------------------*/
 
 $fromemail = array(
-				'email' => 'no-reply@website.com', // Company's Email Address (preferably currently used Domain Name)
-				'name' => 'Company Name' // Company Name
+				'email' => 'empresa@example.com', // Company's Email Address (preferably currently used Domain Name)
+				'name' => 'indumentarias del valle' // Company Name
 			);
 
 
@@ -57,10 +57,26 @@ $recaptcha_secret = ''; // Your reCaptcha Secret
 $mail = new PHPMailer();
 
 /* Add your SMTP Codes after this Line */
+//Real
+// $mail->isSMTP();
+// $mail->SMTPDebug = 0;
+// $mail->Host = 'smtp.gmail.com';
+// $mail->Port = 587;
+// $mail->SMTPSecure = 'tls';
+// $mail->SMTPAuth = true;
+// $mail->Username = "correr@dominio.com";
+// $mail->Password = "passvord";
 
+//De prueba correo creada en mailtrap: tavebi2547@revutap.com --- Clave: vebi2547
+$mail->IsSMTP();
+$mail->SMTPDebug = 0;
+$mail->Host = 'smtp.mailtrap.io';
+$mail->SMTPAuth = true;
+$mail->Port = 2525;
+$mail->Username = '89b77233729bfc';
+$mail->Password = '3223365229387c';
 
 // End of SMTP
-
 
 /*-------------------------------------------------
 	Form Messages
@@ -95,7 +111,7 @@ if( $_SERVER['REQUEST_METHOD'] == 'POST' ) {
 
 	$prefix		= !empty( $_POST['prefix'] ) ? $_POST['prefix'] : '';
 	$submits	= $_POST;
-	$botpassed	= false;
+	$botpassed	= true;
 
 
 	$message_form					= !empty( $submits['message'] ) ? $submits['message'] : array();
@@ -395,6 +411,16 @@ if( $_SERVER['REQUEST_METHOD'] == 'POST' ) {
 
 	$mail->MsgHTML( $body );
 	$mail->CharSet = "UTF-8";
+
+	// *********** DESCOMENTAR PARA CUANDO NO FUNCIONE EL GMAIL  *********
+	// $mail->smtpConnect([
+	// 	'ssl' => [
+	// 		 'verify_peer' => false,
+	// 		 'verify_peer_name' => false,
+	// 		 'allow_self_signed' => true
+	// 	 ]
+	//  ]);
+
 	$sendEmail = $mail->Send();
 
 	if( $sendEmail == true ):

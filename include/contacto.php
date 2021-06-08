@@ -1,5 +1,5 @@
 <?php
-    $destino 'elromerostiven@gmail.com';
+    $destino 'correo@gmail.com';
 
     $nombre = $_GET["nombre"];
     $email = $_GET["email"];
